@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "category": "Websites",
+    "title": "Shigjeta LLC Official Website",
+    "description": "The official website of Shigjeta LLC – a creative digital agency – designed to represent the brand's identity and services with clarity and impact. Built with React and Tailwind, the site delivers.",
+    "imageUrl": "https://raw.githubusercontent.com/TribunBajra/portfolio-images/main/shigjeta.png",
+    "tags": ["React", "Tailwind CSS", "Vite"],
+    "repo": "https://github.com/TribunBajra/shigjeta-website",
+    "live": "https://shigjeta.vercel.app",
+    "details": "#"
+  },
+  {
+    "id": 2,
+    "category": "Websites",
+    "title": "RonniCeramics Official Website",
+    "description": "RonniCeramics is an elegant, product-focused website designed for a premium ceramic studio. Built with React and Tailwind, the site showcases handcrafted.",
+    "imageUrl": "https://raw.githubusercontent.com/TribunBajra/portfolio-images/main/roniceramics.png",
+    "tags": ["React", "Tailwind CSS", "Vite"],
+    "repo": "https://github.com/TribunBajra/roniceramics-website",
+    "live": "https://roniceramics.com",
+    "details": "#"
+  },
+  {
+    "id": 3,
+    "category": "Websites",
+    "title": "Kobags Group Official Website",
+    "description": "Kobags is the official website of an eco-friendly bag manufacturer based in Kosovo. The platform was designed to communicate sustainability, product customization, and brand mission through a clean, modern.",
+    "imageUrl": "https://raw.githubusercontent.com/TribunBajra/portfolio-images/main/kobags.png",
+    "tags": ["React", "Tailwind CSS", "Vite"],
+    "repo": "https://github.com/TribunBajra/kobags-website",
+    "live": "https://kobags-group.com",
+    "details": "#"
+  },
+  {
+    "id": 4,
+    "category": "Configurators",
+    "title": "Kobags Group Custom Bag Configurator",
+    "description": "The Kobags Group Configurator allows users to personalize eco-friendly bags directly in the browser. Built with React and connected to Shopify, it features a dynamic live preview system.",
+    "imageUrl": "https://raw.githubusercontent.com/TribunBajra/portfolio-images/main/kobags-config.png",
+    "tags": ["Next.JS", "Tailwind CSS", "Shopify API"],
+    "repo": "https://github.com/TribunBajra/kobags-configurator",
+    "live": "https://shop.kobags-group.com",
+    "details": "#"
+  },
+  {
+    "id": 5,
+    "category": "Configurators",
+    "title": "RonniCeramics Product Configurator",
+    "description": "The RonniCeramics Configurator allows customers to create fully customized ceramic orders by adjusting product size, glaze, and design. Beyond visual customization, users can input tire.",
+    "imageUrl": "https://raw.githubusercontent.com/TribunBajra/portfolio-images/main/roniceramics-config.png",
+    "tags": ["React", "Tailwind CSS", "Shopify API"],
+    "repo": "https://github.com/TribunBajra/roniceramics-configurator",
+    "live": "https://roniceramics-configurator.vercel.app",
+    "details": "#"
+  },
+  {
+    "id": 6,
+    "category": "Systems",
+    "title": "Inventory Management System",
+    "description": "A robust web-based system for managing product inventory, orders, and sales data.",
+    "imageUrl": "https://via.placeholder.com/600x400/1e293b/e0e7ff?text=Inventory+System",
+    "tags": ["Node.js", "Express", "MongoDB"],
+    "repo": "https://github.com/TribunBajra/inventory-system",
+    "live": "#",
+    "details": "#"
+  },
+  {
+    "id": 7,
+    "category": "Devices",
+    "title": "Smart Home Dashboard",
+    "description": "An intuitive dashboard for controlling and monitoring various smart home devices.",
+    "imageUrl": "https://via.placeholder.com/600x400/1e293b/e0e7ff?text=Smart+Home+Dashboard",
+    "tags": ["React Native", "IoT", "Firebase"],
+    "repo": "https://github.com/TribunBajra/smart-home-dashboard",
+    "live": "#",
+    "details": "#"
+  },
+  {
+    "id": 8,
+    "category": "Other",
+    "title": "Blog Platform",
+    "description": "A minimalist blog platform built with server-side rendering and markdown support.",
+    "imageUrl": "https://via.placeholder.com/600x400/1e293b/e0e7ff?text=Blog+Platform",
+    "tags": ["Next.js", "Markdown", "PostgreSQL"],
+    "repo": "https://github.com/TribunBajra/blog-platform",
+    "live": "#",
+    "details": "#"
+  }
+]
