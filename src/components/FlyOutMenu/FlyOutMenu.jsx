@@ -154,7 +154,6 @@ function FlyOutMenu() {
                   <FaWhatsapp className="h-5 w-5" /> Chat on WhatsApp
                 </a>
                 <p className="mt-2 text-xs text-gray-400">
-                  (Replace "YOUR_PHONE_NUMBER" in the code with your full WhatsApp number, e.g., 15551234567)
                 </p>
             </div>
 

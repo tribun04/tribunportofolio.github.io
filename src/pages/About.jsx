@@ -234,14 +234,19 @@ const AboutPage = () => {
               Ready to bring your next project to life? I'd love to hear about your ideas and see how we can collaborate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+             <a href="mailto:tribunbajra4@gmail.com">
               <button className="px-8 py-4 bg-gradient-to-r from-[#bd34fe] to-[#7c3aed] rounded-xl font-semibold text-white flex items-center justify-center gap-2 hover:shadow-2xl hover:shadow-[#bd34fe]/40 transition-all duration-300">
                 <FaEnvelope className="text-lg" />
                 Get In Touch
               </button>
+              </a>
+   
+              <a href="/ResumeTB.pdf" download target="_blank" rel="noopener noreferrer">
               <button className="px-8 py-4 bg-gray-800/50 border border-gray-700 rounded-xl font-semibold text-white flex items-center justify-center gap-2 hover:bg-gray-700/50 transition-all duration-300">
                 <FaDownload className="text-lg" />
                 Download Resume
               </button>
+              </a>
             </div>
           </div>
         </div>

@@ -225,13 +225,7 @@ const Footer = () => {
         </div>
 
         {/* Built With */}
-        <div className="mt-8 text-center">
-          <p className="text-xs text-gray-600 flex items-center justify-center gap-2">
-            <FaCode className="text-[#bd34fe]" />
-            Built with React, Tailwind CSS & Vite
-            <FaCode className="text-[#ff6cde]" />
-          </p>
-        </div>
+       
       </div>
 
       {/* Gradient Bottom Bar */}

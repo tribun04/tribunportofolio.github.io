@@ -6,6 +6,7 @@ import "../index.css";
 import { FaLaptopCode, FaUser, FaFileAlt, FaBolt, FaCog, FaArrowRight, FaGithub, FaLinkedin, FaTwitter, FaRegStar, FaRocket } from 'react-icons/fa';
 import { MdOutlineSpeed, MdOutlineStar, MdEmail, MdPhone } from 'react-icons/md';
 import { RiCustomerService2Fill } from 'react-icons/ri';
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState({
@@ -228,7 +229,7 @@ const Home = () => {
                 {/* Main Heading */}
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight tracking-tight">
                   Crafting{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#bd34fe] via-[#ff6cde] to-[#bd34fe] bg-size-200 animate-gradient">
+                  <span className=" z-40  text-[#bd34fe]">
                     Digital
                   </span>{" "}
                   Excellence
@@ -243,13 +244,13 @@ const Home = () => {
                 
                 {/* CTA Buttons */}
                 <div className="flex flex-wrap gap-4 mb-12">
+                 <NavLink to="/projects">
                   <button className="px-8 py-4 bg-gradient-to-r from-[#bd34fe] to-[#7c3aed] rounded-xl font-semibold text-white flex items-center gap-3 group hover:shadow-2xl hover:shadow-[#bd34fe]/40 transition-all duration-300 hover:-translate-y-1 active:scale-95">
                     <span>Explore My Work</span>
                     <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
                   </button>
-                  <button className="px-8 py-4 bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl font-semibold text-white hover:bg-gray-700/50 hover:border-gray-600 transition-all duration-300 hover:-translate-y-1 active:scale-95">
-                    Schedule Consultation
-                  </button>
+                  </NavLink>
+                 
                 </div>
 
                 {/* Social Links */}
@@ -489,13 +490,19 @@ const Home = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+              <NavLink to="/contact">
               <button className="px-12 py-5 bg-gradient-to-r from-[#bd34fe] to-[#7c3aed] rounded-xl font-semibold text-white flex items-center justify-center gap-3 group hover:shadow-2xl hover:shadow-[#bd34fe]/40 transition-all duration-300 hover:-translate-y-1 active:scale-95 text-lg">
                 <span>Start Your Project</span>
                 <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
               </button>
+              </NavLink>
+                            <NavLink to="/about">
+
               <button className="px-12 py-5 bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl font-semibold text-white hover:bg-gray-700/50 hover:border-gray-600 transition-all duration-300 hover:-translate-y-1 active:scale-95 text-lg">
                 View Case Studies
+
               </button>
+              </NavLink>
             </div>
             
             {/* Stats */}

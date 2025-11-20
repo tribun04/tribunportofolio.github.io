@@ -96,19 +96,19 @@ const ContactForm = () => {
     {
       icon: <FaMapMarkerAlt className="text-2xl" />,
       title: "Location",
-      content: "Creative City, Digital State 12345",
+      content: "kosova, Kaqanik",
       gradient: "from-purple-500 to-pink-500"
     },
     {
       icon: <FaPhone className="text-2xl" />,
       title: "Phone",
-      content: "+1 (234) 567-8901",
+      content: "+383 45 488-938",
       gradient: "from-blue-500 to-cyan-500"
     },
     {
       icon: <FaEnvelope className="text-2xl" />,
       title: "Email",
-      content: "hello@portfolio.com",
+      content: "tribunbajra4@gmail.com",
       gradient: "from-green-500 to-emerald-500"
     }
   ];
@@ -328,12 +328,11 @@ const ContactForm = () => {
               Let's collaborate to create something extraordinary. I'm excited to hear about your ideas and help bring them to life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+             <a href="mailto:tribunbajra4@gmail.com">
               <button className="px-8 py-4 bg-gradient-to-r from-[#bd34fe] to-[#7c3aed] rounded-xl font-semibold text-white hover:shadow-2xl hover:shadow-[#bd34fe]/40 transition-all duration-300 hover:-translate-y-1">
                 Schedule a Call
               </button>
-              <button className="px-8 py-4 bg-gray-800/50 border border-gray-700 rounded-xl font-semibold text-white hover:bg-gray-700/50 transition-all duration-300 hover:-translate-y-1">
-                View Portfolio
-              </button>
+            </a>
             </div>
           </div>
         </div>

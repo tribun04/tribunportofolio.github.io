@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ParticlesBackground from '../components/ParticlesBackground/ParticlesBackground';
 import ProjectCard from '../components/ProjectCard.jsx';
 import projectsData from '../data/projects.json';
+import { NavLink } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -142,7 +143,7 @@ const ProjectsPage = () => {
               </div>
 
               <h1 className="page-title">
-                Creative <span className="gradient-text">Projects</span> & Innovations
+                Creative <span className="gradient-text">Projects</span> 
               </h1>
             </div>
 
@@ -231,12 +232,14 @@ const ProjectsPage = () => {
                 Let's bring your next big idea to life with innovative solutions and exceptional craftsmanship
               </p>
               <div className="cta-buttons">
+               <NavLink to="/contact">
                 <button className="btn-primary">
                   Start a Project
                 </button>
-                <button className="btn-secondary">
-                  Download Resume
-                </button>
+                </NavLink>
+                
+   c
+
               </div>
             </div>
           </div>

@@ -16,7 +16,7 @@ import ParticlesBackground from './components/ParticlesBackground/ParticlesBackg
 
 function App() {
   return (
-    <Router>
+    <>
         <Header />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -35,7 +35,7 @@ function App() {
      
         <ParticlesBackground />
         
-    </Router>
+    </>
   );
 }
 

@@ -3,88 +3,181 @@
     "id": 1,
     "category": "Websites",
     "title": "Shigjeta LLC Official Website",
-    "description": "The official website of Shigjeta LLC – a creative digital agency – designed to represent the brand's identity and services with clarity and impact. Built with React and Tailwind, the site delivers.",
-    "imageUrl": "https://raw.githubusercontent.com/TribunBajra/portfolio-images/main/shigjeta.png",
-    "tags": ["React", "Tailwind CSS", "Vite"],
+    "description": "The official website of Shigjeta LLC – a creative digital agency. Built with React and Tailwind, the site represents the brand with clarity and impact.",
+    "imageUrl": "https://d3p4apbiz04oxz.cloudfront.net/projects/shigjeta-website/mainImage-1748690274654.png",
+    "images": [
+      "https://d3p4apbiz04oxz.cloudfront.net/projects/shigjeta-website/mainImage-1748690274654.png",
+      "https://via.placeholder.com/800x600/0f172a/4f46e5?text=Shigjeta+Mobile+View",
+      "https://via.placeholder.com/800x600/0f172a/4f46e5?text=Shigjeta+Features"
+    ],
+    "tags": ["React", "Tailwind CSS", "Vite", "Framer Motion", "Responsive"],
+    "tech": ["React", "Tailwind CSS", "Vite", "Framer Motion"],
     "repo": "https://github.com/TribunBajra/shigjeta-website",
-    "live": "https://shigjeta.vercel.app",
-    "details": "#"
+    "live": "https://shigjeta.com",
+    "date": "2024",
+    "status": "Live",
+    "features": [
+      "Modern responsive design",
+      "Smooth animations and transitions",
+      "SEO optimized",
+      "Fast loading performance",
+      "Cross-browser compatible"
+    ],
+    "challenges": [
+      "Creating engaging animations without sacrificing performance",
+      "Ensuring brand consistency across all pages",
+      "Optimizing for various screen sizes"
+    ]
   },
   {
     "id": 2,
     "category": "Websites",
     "title": "RonniCeramics Official Website",
-    "description": "RonniCeramics is an elegant, product-focused website designed for a premium ceramic studio. Built with React and Tailwind, the site showcases handcrafted.",
-    "imageUrl": "https://raw.githubusercontent.com/TribunBajra/portfolio-images/main/roniceramics.png",
-    "tags": ["React", "Tailwind CSS", "Vite"],
+    "description": "An elegant, product-focused website for a premium ceramic studio. Built with React and Tailwind to showcase artistic craftsmanship.",
+    "imageUrl": "https://d3p4apbiz04oxz.cloudfront.net/projects/ronniceramics-website/mainImage-1748690500768.png",
+    "images": [
+      "https://d3p4apbiz04oxz.cloudfront.net/projects/ronniceramics-website/mainImage-1748690500768.png",
+      "https://via.placeholder.com/800x600/0f172a/ec4899?text=RonniCeramics+Gallery",
+      "https://via.placeholder.com/800x600/0f172a/ec4899?text=RonniCeramics+Products"
+    ],
+    "tags": ["React", "Tailwind CSS", "Vite", "E-commerce", "Gallery"],
+    "tech": ["React", "Tailwind CSS", "Vite", "React Router"],
     "repo": "https://github.com/TribunBajra/roniceramics-website",
-    "live": "https://roniceramics.com",
-    "details": "#"
+    "live": "https://ronniceramics.com/",
+    "date": "2024",
+    "status": "Live",
+    "features": [
+      "Product gallery with filtering",
+      "E-commerce functionality",
+      "High-quality image optimization",
+      "Artist portfolio showcase",
+      "Contact and commission system"
+    ],
+    "challenges": [
+      "Displaying ceramic artwork with accurate colors",
+      "Creating an intuitive product navigation",
+      "Balancing aesthetics with functionality"
+    ]
   },
   {
     "id": 3,
     "category": "Websites",
     "title": "Kobags Group Official Website",
-    "description": "Kobags is the official website of an eco-friendly bag manufacturer based in Kosovo. The platform was designed to communicate sustainability, product customization, and brand mission through a clean, modern.",
-    "imageUrl": "https://raw.githubusercontent.com/TribunBajra/portfolio-images/main/kobags.png",
-    "tags": ["React", "Tailwind CSS", "Vite"],
+    "description": "Official website for an eco-friendly bag manufacturer. Designed to communicate sustainability and customization options.",
+    "imageUrl": "https://d3p4apbiz04oxz.cloudfront.net/projects/kobags-website/mainImage-1748690769550.png",
+    "images": [
+      "https://d3p4apbiz04oxz.cloudfront.net/projects/kobags-website/mainImage-1748690769550.png",
+      "https://via.placeholder.com/800x600/0f172a/10b981?text=Kobags+Sustainability",
+      "https://via.placeholder.com/800x600/0f172a/10b981?text=Kobags+Products"
+    ],
+    "tags": ["React", "Tailwind CSS", "Vite", "Sustainability", "Eco-friendly"],
+    "tech": ["React", "Tailwind CSS", "Vite", "Green Technologies"],
     "repo": "https://github.com/TribunBajra/kobags-website",
     "live": "https://kobags-group.com",
-    "details": "#"
+    "date": "2024",
+    "status": "Live",
+    "features": [
+      "Sustainability messaging",
+      "Product customization preview",
+      "Eco-material information",
+      "Manufacturing process showcase",
+      "B2B and B2C sections"
+    ],
+    "challenges": [
+      "Communicating complex manufacturing processes simply",
+      "Showcasing eco-friendly materials effectively",
+      "Creating trust in sustainable practices"
+    ]
   },
   {
     "id": 4,
     "category": "Configurators",
     "title": "Kobags Group Custom Bag Configurator",
-    "description": "The Kobags Group Configurator allows users to personalize eco-friendly bags directly in the browser. Built with React and connected to Shopify, it features a dynamic live preview system.",
-    "imageUrl": "https://raw.githubusercontent.com/TribunBajra/portfolio-images/main/kobags-config.png",
-    "tags": ["Next.JS", "Tailwind CSS", "Shopify API"],
+    "description": "A browser-based configurator for customizing eco-friendly bags. Connected to Shopify with live preview and real-time pricing.",
+    "imageUrl": "http://d3p4apbiz04oxz.cloudfront.net/projects/kobags-configurator/additionalImages-1748695003577.png",
+    "images": [
+      "http://d3p4apbiz04oxz.cloudfront.net/projects/kobags-configurator/additionalImages-1748695003577.png",
+      "http://d3p4apbiz04oxz.cloudfront.net/projects/kobags-configurator/additionalImages-1748695003577.png",
+      "http://d3p4apbiz04oxz.cloudfront.net/projects/kobags-configurator/additionalImages-1748695003577.png"
+    ],
+    "tags": ["Next.JS", "Tailwind CSS", "Shopify API", "3D Preview", "E-commerce"],
+    "tech": ["Next.js", "Tailwind CSS", "Shopify API", "Three.js"],
     "repo": "https://github.com/TribunBajra/kobags-configurator",
     "live": "https://shop.kobags-group.com",
-    "details": "#"
+    "date": "2024",
+    "status": "Live",
+    "features": [
+      "Real-time 3D product preview",
+      "Material and color customization",
+      "Live pricing updates",
+      "Shopify integration",
+      "Export configurations"
+    ],
+    "challenges": [
+      "Syncing with Shopify inventory in real-time",
+      "Creating accurate 3D representations",
+      "Handling complex pricing rules"
+    ]
   },
   {
     "id": 5,
     "category": "Configurators",
     "title": "RonniCeramics Product Configurator",
-    "description": "The RonniCeramics Configurator allows customers to create fully customized ceramic orders by adjusting product size, glaze, and design. Beyond visual customization, users can input tire.",
-    "imageUrl": "https://raw.githubusercontent.com/TribunBajra/portfolio-images/main/roniceramics-config.png",
-    "tags": ["React", "Tailwind CSS", "Shopify API"],
-    "repo": "https://github.com/TribunBajra/roniceramics-configurator",
-    "live": "https://roniceramics-configurator.vercel.app",
-    "details": "#"
+    "description": "A full ceramic product configurator for customizing glaze, size, and design with real-time visual preview.",
+    "imageUrl": "https://d3p4apbiz04oxz.cloudfront.net/projects/ronniceramics-configurator/mainImage-1748695397324.png",
+    "images": [
+      "https://d3p4apbiz04oxz.cloudfront.net/projects/ronniceramics-configurator/mainImage-1748695397324.png",
+      "https://d3p4apbiz04oxz.cloudfront.net/projects/ronniceramics-configurator/mainImage-1748695397324.png",
+      "https://d3p4apbiz04oxz.cloudfront.net/projects/ronniceramics-configurator/mainImage-1748695397324.png"
+    ],
+    "tags": ["React", "Tailwind CSS", "Shopify API", "Visual Configurator", "Custom Design"],
+    "tech": ["React", "Tailwind CSS", "Shopify API", "Canvas API"],
+    "repo": "#",
+    "live": "https://shop.ronniceramics.com/",
+    "date": "2024",
+    "status": "Live",
+    "features": [
+      "Glaze color visualizer",
+      "Size and shape customization",
+      "Pattern and texture options",
+      "Real-time visual feedback",
+      "Order summary generation"
+    ],
+    "challenges": [
+      "Accurately representing ceramic glazes digitally",
+      "Handling complex customization combinations",
+      "Ensuring visual consistency"
+    ]
   },
   {
-    "id": 6,
-    "category": "Systems",
-    "title": "Inventory Management System",
-    "description": "A robust web-based system for managing product inventory, orders, and sales data.",
-    "imageUrl": "https://via.placeholder.com/600x400/1e293b/e0e7ff?text=Inventory+System",
-    "tags": ["Node.js", "Express", "MongoDB"],
-    "repo": "https://github.com/TribunBajra/inventory-system",
-    "live": "#",
-    "details": "#"
-  },
-  {
-    "id": 7,
-    "category": "Devices",
-    "title": "Smart Home Dashboard",
-    "description": "An intuitive dashboard for controlling and monitoring various smart home devices.",
-    "imageUrl": "https://via.placeholder.com/600x400/1e293b/e0e7ff?text=Smart+Home+Dashboard",
-    "tags": ["React Native", "IoT", "Firebase"],
-    "repo": "https://github.com/TribunBajra/smart-home-dashboard",
-    "live": "#",
-    "details": "#"
-  },
-  {
-    "id": 8,
-    "category": "Other",
-    "title": "Blog Platform",
-    "description": "A minimalist blog platform built with server-side rendering and markdown support.",
-    "imageUrl": "https://via.placeholder.com/600x400/1e293b/e0e7ff?text=Blog+Platform",
-    "tags": ["Next.js", "Markdown", "PostgreSQL"],
-    "repo": "https://github.com/TribunBajra/blog-platform",
-    "live": "#",
-    "details": "#"
-  }
+  "id": 6,
+  "category": "Websites",
+  "title": "e-Qera Platform",
+  "description": "A full-featured platform for property listings, rentals, and management with user-friendly search and real-time updates.",
+  "imageUrl": "https://d3p4apbiz04oxz.cloudfront.net/projects/e-qera/mainImage-1748691884870.png",
+  "images": [
+    "https://d3p4apbiz04oxz.cloudfront.net/projects/e-qera/mainImage-1748691884870.png",
+    "https://d3p4apbiz04oxz.cloudfront.net/projects/e-qera/mainImage-1748691884870.png",
+    "https://d3p4apbiz04oxz.cloudfront.net/projects/e-qera/mainImage-1748691884870.png"
+  ],
+  "tags": ["React", "Tailwind CSS", "Next.js", "Property Platform", "Real-time Search"],
+  "tech": ["React", "Tailwind CSS", "Next.js", "Node.js", "MongoDB"],
+  "repo": "#",
+  "live": "https://e-qera.com/",
+  "date": "2024",
+  "status": "Live",
+  "features": [
+    "Advanced property search and filters",
+    "User registration and property management",
+    "Real-time listing updates",
+    "Favorites and saved searches",
+    "Responsive and mobile-friendly design"
+  ],
+  "challenges": [
+    "Implementing fast and accurate search functionality",
+    "Managing large amounts of property data",
+    "Ensuring smooth UX across devices"
+  ]
+}
+
 ]
