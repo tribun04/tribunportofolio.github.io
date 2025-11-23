@@ -5,7 +5,7 @@ import "../index.css";
 // Icons
 import { FaLaptopCode, FaUser, FaFileAlt, FaBolt, FaCog, FaArrowRight, FaGithub, FaLinkedin, FaTwitter, FaRegStar, FaRocket } from 'react-icons/fa';
 import { MdOutlineSpeed, MdOutlineStar, MdEmail, MdPhone } from 'react-icons/md';
-import { RiCustomerService2Fill } from 'react-icons/ri';
+import { MdDeveloperMode } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
@@ -98,13 +98,7 @@ const Home = () => {
       tech: ["Figma", "Adobe XD", "Prototyping", "User Research", "Design Systems"],
       gradient: "from-blue-500 to-cyan-500"
     },
-    { 
-      title: "Mobile Development", 
-      desc: "Cross-platform mobile applications that work seamlessly on iOS and Android. I build native-feeling apps with React Native and Flutter.",
-      icon: <MdOutlineSpeed className="text-4xl" />,
-      tech: ["React Native", "Flutter", "iOS", "Android", "Expo"],
-      gradient: "from-green-500 to-emerald-500"
-    },
+  
     { 
       title: "E-Commerce Solutions", 
       desc: "Complete online store setup with payment integration and inventory management. I build scalable e-commerce platforms that convert visitors into customers.",
@@ -210,119 +204,129 @@ const Home = () => {
 
       <main className="relative z-10">
         {/* Hero Section */}
-        <section ref={heroRef} className="min-h-screen flex items-center justify-center px-6 py-20 lg:px-16 lg:py-0">
-          <div className="max-w-7xl w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
-            {/* Left Content */}
-            <div className="flex-1 max-w-2xl lg:max-w-none">
-              <div className={`transition-all duration-1000 transform ${
-                isVisible.hero ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-              }`}>
-                {/* Availability Badge */}
-                <div className="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 mb-8 group hover:border-[#bd34fe] transition-all duration-500">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#bd34fe] to-[#ff6cde] animate-pulse" />
-                    <span className="text-sm font-medium text-gray-300">Available for new projects</span>
-                  </div>
-                  <div className="w-1 h-1 rounded-full bg-gray-600 group-hover:bg-[#bd34fe] transition-colors" />
-                </div>
+      <section className="relative min-h-screen flex items-center justify-center px-6 py-20 lg:px-16 lg:py-0 overflow-hidden">
+      {/* Centered, Animated Arcs */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full flex items-center justify-center -z-20">
+        <svg className="w-full h-full" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice">
+          <path className="arc arc-1" d="M420,400 C620,600 1020,200 1220,400" stroke="#bd34fe" strokeWidth="4" fill="transparent" style={{ animation: 'arc-pulse 4s ease-in-out infinite' }}/>
+          <path className="arc arc-2" d="M420,400 C620,200 1020,600 1220,400" stroke="#ff6cde" strokeWidth="3" fill="transparent" style={{ animation: 'arc-pulse 5s ease-in-out infinite reverse' }}/>
+          <path className="arc arc-3" d="M520,400 C720,550 920,250 1120,400" stroke="#7c3aed" strokeWidth="2" fill="transparent" style={{ animation: 'arc-pulse 6s ease-in-out infinite' }}/>
+          <path className="arc arc-4" d="M520,400 C720,250 920,550 1120,400" stroke="#bd34fe" strokeWidth="2" fill="transparent" style={{ animation: 'arc-pulse 7s ease-in-out infinite reverse' }}/>
+        </svg>
+      </div>
 
-                {/* Main Heading */}
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight tracking-tight">
-                  Crafting{" "}
-                  <span className=" z-40  text-[#bd34fe]">
-                    Digital
-                  </span>{" "}
-                  Excellence
-                </h1>
-                
-                {/* Subtitle */}
-                <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
-                  I transform complex ideas into{" "}
-                  <span className="text-[#bd34fe] font-semibold">exceptional digital solutions</span> 
-                  {" "}that drive measurable results and create lasting impact.
-                </p>
-                
-                {/* CTA Buttons */}
-                <div className="flex flex-wrap gap-4 mb-12">
-                 <NavLink to="/projects">
-                  <button className="px-8 py-4 bg-gradient-to-r from-[#bd34fe] to-[#7c3aed] rounded-xl font-semibold text-white flex items-center gap-3 group hover:shadow-2xl hover:shadow-[#bd34fe]/40 transition-all duration-300 hover:-translate-y-1 active:scale-95">
-                    <span>Explore My Work</span>
-                    <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
-                  </button>
-                  </NavLink>
-                 
-                </div>
+      {/* Grid and Glowing Orbs Background */}
+      <div className="absolute inset-0 -z-30">
+        <div className="absolute inset-0 bg-grid-pattern"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-glow-orb blur-3xl opacity-20"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-glow-orb-2 blur-3xl opacity-20"></div>
+      </div>
 
-                {/* Social Links */}
-                <div className="flex items-center gap-5">
-                  {[
-                    { icon: <FaGithub />, label: "GitHub", href: "https://github.com/tribun04" },
-                    { icon: <FaLinkedin />, label: "LinkedIn", href: "https://www.linkedin.com/in/tribunb/" },
-                  ].map((social, index) => (
-                    <a
-                      key={index}
-                      href={social.href}
-                      className="w-12 h-12 rounded-xl bg-gray-800/50 backdrop-blur-sm border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-[#bd34fe] hover:bg-gray-800/70 transition-all duration-300 group hover:-translate-y-1"
-                      aria-label={social.label}
-                    >
-                      <div className="group-hover:scale-110 transition-transform duration-300">
-                        {social.icon}
-                      </div>
-                    </a>
-                  ))}
-                </div>
+
+      <div className="max-w-7xl w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+        {/* Left Content */}
+        <div className="flex-1 max-w-2xl lg:max-w-none">
+          <div className={`transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            {/* Enhanced Availability Badge */}
+            <div className="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 mb-8 group hover:border-[#bd34fe] transition-all duration-500 animate-hero-pulse">
+              <div className="flex items-center gap-2">
+                <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-[#bd34fe] to-[#ff6cde] animate-pulse" />
+                <span className="text-sm font-medium text-gray-300">Available for new projects</span>
               </div>
+              <div className="w-1 h-1 rounded-full bg-gray-600 group-hover:bg-[#bd34fe] transition-colors" />
             </div>
 
-            {/* Right Visual */}
-            <div className="flex-1 flex justify-center lg:justify-end">
-              <div className={`relative transition-all duration-1000 delay-300 ${
-                isVisible.hero ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-              }`}>
-                {/* Main Profile Container */}
-                <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-                  {/* Animated Border */}
-                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#bd34fe] to-[#7c3aed] p-1.5 animate-spin-slow">
-                    <div className="w-full h-full rounded-3xl bg-[#0f0f10]" />
+            {/* Enhanced Main Heading */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight tracking-tight">
+              Crafting <span className="z-40 text-transparent bg-clip-text bg-gradient-to-r from-[#bd34fe] to-[#ff6cde]">Digital</span> Excellence
+            </h1>
+
+            {/* Enhanced Subtitle */}
+            <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
+              I transform complex ideas into <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#bd34fe] to-[#7c3aed] font-semibold">exceptional digital solutions</span> that drive measurable results and create lasting impact.
+            </p>
+
+            {/* Enhanced CTA Buttons */}
+            <div className="flex flex-wrap gap-4 mb-12">
+              <NavLink to="/projects">
+                <button className="px-8 py-4 bg-gradient-to-r from-[#bd34fe] to-[#7c3aed] rounded-xl font-semibold text-white flex items-center gap-3 group hover:shadow-2xl hover:shadow-[#bd34fe]/40 transition-all duration-300 hover:-translate-y-1 active:scale-95 relative overflow-hidden">
+                  <span className="relative z-10">Explore My Work</span>
+                  <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#7c3aed] to-[#bd34fe] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </button>
+              </NavLink>
+            </div>
+
+            {/* Enhanced Social Links */}
+            <div className="flex items-center gap-5">
+              {[
+                { icon: <FaGithub />, label: "GitHub", href: "https://github.com/tribun04" },
+                { icon: <FaLinkedin />, label: "LinkedIn", href: "https://www.linkedin.com/in/tribunb/" },
+              ].map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  className="w-12 h-12 rounded-xl bg-gray-800/50 backdrop-blur-sm border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-[#bd34fe] hover:bg-gray-800/70 transition-all duration-300 group hover:-translate-y-1 relative overflow-hidden"
+                  aria-label={social.label}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#bd34fe] to-[#7c3aed] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="group-hover:scale-110 transition-transform duration-300 relative z-10">
+                    {social.icon}
                   </div>
-                  
-                  {/* Profile Content */}
-                  <div className="absolute inset-2 rounded-2xl bg-[#0f0f10] flex items-center justify-center p-8">
-                    <div className="text-center">
-                      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#bd34fe] to-[#7c3aed] flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-[#bd34fe]/30">
-                        <RiCustomerService2Fill className="text-4xl text-white" />
-                      </div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Full Stack Developer</h3>
-                      <p className="text-gray-400 text-sm">React • Node.js • TypeScript • AWS</p>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Floating Stats */}
-                {[
-                  { top: "-5%", right: "-5%", value: "50+", label: "Projects", delay: "0s" },
-                  { bottom: "-5%", left: "-5%", value: "5+", label: "Years Exp", delay: "1s" },
-                  { top: "35%", left: "-15%", value: "100%", label: "Satisfaction", delay: "2s" }
-                ].map((item, index) => (
-                  <div
-                    key={index}
-                    className="absolute w-20 h-20 rounded-2xl bg-gray-800/80 backdrop-blur-sm border border-gray-700 flex flex-col items-center justify-center p-2 shadow-2xl animate-float hover:-translate-y-2 transition-transform duration-300"
-                    style={{
-                      top: item.top,
-                      right: item.right,
-                      bottom: item.bottom,
-                      left: item.left,
-                      animationDelay: item.delay
-                    }}
-                  >
-                    <span className="text-lg font-bold text-[#bd34fe]">{item.value}</span>
-                    <span className="text-xs text-center text-gray-400 mt-1">{item.label}</span>
-                  </div>
-                ))}
-              </div>
+                </a>
+              ))}
             </div>
           </div>
-        </section>
+        </div>
+
+        {/* Enhanced Right Visual */}
+        <div className="flex-1 flex justify-center lg:justify-end">
+          <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            {/* Enhanced Main Profile Container */}
+            <div className="relative w-80 h-80 lg:w-96 lg:h-96 animate-hero-pulse">
+              {/* Enhanced Animated Border */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#bd34fe] via-[#7c3aed] to-[#ff6cde] p-1.5 animate-spin-slow">
+                <div className="w-full h-full rounded-3xl bg-[#0f0f10]" />
+              </div>
+
+              {/* Enhanced Profile Content */}
+              <div className="absolute inset-2 rounded-2xl bg-[#0f0f10] flex items-center justify-center p-8">
+                <div className="text-center">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#bd34fe] to-[#7c3aed] flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-[#bd34fe]/30 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#7c3aed] to-[#bd34fe] opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    <MdDeveloperMode className="text-4xl text-white relative z-10" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-2">Full Stack Developer</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Enhanced Floating Stats */}
+            {[
+              { top: "-5%", right: "-5%", value: "10+", label: "Projects", delay: "0s" },
+              { bottom: "-5%", left: "-5%", value: "3+", label: "Years Exp", delay: "1s" },
+              { top: "35%", left: "-15%", value: "100%", label: "Satisfaction", delay: "2s" }
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="absolute w-20 h-20 rounded-2xl bg-gray-800/80 backdrop-blur-sm border border-gray-700 flex flex-col items-center justify-center p-2 shadow-2xl animate-float hover:-translate-y-2 transition-transform duration-300 group hover:border-[#bd34fe]"
+                style={{
+                  top: item.top,
+                  right: item.right,
+                  bottom: item.bottom,
+                  left: item.left,
+                  animationDelay: item.delay
+                }}
+              >
+                <span className="text-lg font-bold text-[#bd34fe] group-hover:scale-110 transition-transform duration-300">{item.value}</span>
+                <span className="text-xs text-center text-gray-400 mt-1 group-hover:text-gray-300 transition-colors duration-300">{item.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
 
         {/* Services Section */}
         <section ref={servicesRef} className="py-32 px-6 lg:px-16 relative">
@@ -490,7 +494,7 @@ const Home = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
-              <NavLink to="/contact">
+              <NavLink to="/contact" className="mx-auto lg:m-0">
               <button className="px-12 py-5 bg-gradient-to-r from-[#bd34fe] to-[#7c3aed] rounded-xl font-semibold text-white flex items-center justify-center gap-3 group hover:shadow-2xl hover:shadow-[#bd34fe]/40 transition-all duration-300 hover:-translate-y-1 active:scale-95 text-lg">
                 <span>Start Your Project</span>
                 <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />

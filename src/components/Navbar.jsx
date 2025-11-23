@@ -52,13 +52,7 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/contact"
-              style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}
-              className="transition-colors hover:text-white"
-            >
-              Contact
-            </NavLink>
+            
           </li>
         </ul>
 

@@ -27,7 +27,8 @@ function App() {
 
             
             <Route path="/experience" element={<Experience />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />            <Route path="/Game" element={<Contact />} />
+
           </Routes>
         <Footer />
        

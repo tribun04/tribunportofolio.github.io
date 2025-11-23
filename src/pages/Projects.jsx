@@ -238,7 +238,6 @@ const ProjectsPage = () => {
                 </button>
                 </NavLink>
                 
-   c
 
               </div>
             </div>
